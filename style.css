@@ -70,6 +70,7 @@ body {
   width: 100%;
   aspect-ratio: 4 / 5;
   background-color: #eee;
+  cursor: pointer;
 }
 
 .post-media img.main-img {
@@ -133,7 +134,7 @@ body {
   gap: 5px;
   font-size: 13px;
   font-weight: 600;
-  color: #ffffff;
+  color: #333333;
   cursor: pointer;
   background: none;
   border: none;
@@ -147,21 +148,27 @@ body {
   stroke-width: 2;
   stroke-linecap: round;
   stroke-linejoin: round;
+  transition: transform 0.15s ease;
+}
+
+/* Estilo para quando o botão Salvar/Bookmark for clicado */
+.action-btn.bookmarked svg {
+  fill: #0e0c0c;
 }
 
 /* Texto de Curtidas */
 .post-details {
   padding: 0 16px 12px 16px;
   font-size: 13px;
-  color: #e0e5ec;
+  color: #333333;
 }
 
 .likes {
-  color: #e8ebef;
+  color: #333333;
 }
 
 .likes strong {
-  color: #e9eef6;
+  color: #0e0c0c;
 }
 
 /* Barra de Navegação Inferior */
@@ -186,4 +193,3 @@ body {
   stroke: currentColor;
   stroke-width: 2;
 }
-
